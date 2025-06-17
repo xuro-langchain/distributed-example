@@ -8,13 +8,17 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+IMPORTANT:
+Create a .env file from the .env.example
+Without this you won't be able to trace or run
+
 ## Running 
 Start the distributed child server first
 ```
 python3 distributed_child.py
 ```
 
-Then run the distributed parent call
+In a separate terminal, then run the distributed parent call
 ```
 python3 distributed_parent.py
 ```
